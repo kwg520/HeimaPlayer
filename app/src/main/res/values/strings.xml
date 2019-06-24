@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">黑马影音</string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great messages.</string>
+</resources>
