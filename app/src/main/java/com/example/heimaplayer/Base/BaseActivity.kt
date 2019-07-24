@@ -1,15 +1,19 @@
 package com.example.heimaplayer.Base
 
 import android.os.Bundle
+import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
+import kotlin.system.exitProcess
 
 /**
  * 所有activity的基类
  */
  abstract class BaseActivity:AppCompatActivity(),AnkoLogger {
+
+    var mExitTime : Long = 0
 //    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
 //        super.onCreate(savedInstanceState, persistentState)
 //        setContentView(getLayoutId())
@@ -58,5 +62,23 @@ import org.jetbrains.anko.toast
         finish()
     }
 
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (System.currentTimeMillis() - mExitTime > 2000) {
+                myToast("再按一次退出程序")
+                mExitTime = System.currentTimeMillis()
+            } else {
+                finish()
+                exitProcess(0)
+                System.gc()
+            }
+            return true
+        }
+        // 拦截MENU按钮点击事件，让他无任何操作
+        return if (keyCode == KeyEvent.KEYCODE_MENU) {
+            true
+        } else super.onKeyDown(keyCode, event)
+    }
 
 }
