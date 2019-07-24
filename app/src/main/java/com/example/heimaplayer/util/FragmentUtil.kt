@@ -10,6 +10,10 @@ import com.example.heimaplayer.ui.fragment.YuedanFragment
 class FragmentUtil private constructor(){
     companion object{
         val fragmentUtil by lazy { FragmentUtil() }
+//        val homeFragment by lazy { HomeFragment() }
+//        val mvFragment by lazy { MvFragment() }
+//        val vbangFragment by lazy { VbangFragment() }
+//        val yuedanFragment by lazy { YuedanFragment() }
     }
     private val homeFragment by lazy { HomeFragment() }
     private val mvFragment by lazy { MvFragment() }

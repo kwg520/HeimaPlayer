@@ -19,5 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             app:bb_tabXmlResource="@xml/bottombar_tabs" />
-
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+            <!--android:id="@+id/bottomBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="#ffffff"-->
+            <!--app:menu="@menu/bottom_menu"-->
+            <!--app:labelVisibilityMode="labeled"/>-->
 </LinearLayout>

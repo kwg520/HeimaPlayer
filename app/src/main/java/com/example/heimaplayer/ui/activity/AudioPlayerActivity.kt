@@ -3,14 +3,11 @@ package com.example.heimaplayer.ui.activity
 import android.content.ComponentName
 import android.content.Context
 import android.content.ServiceConnection
-import android.graphics.drawable.Animatable
 import android.graphics.drawable.AnimationDrawable
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.os.Handler
 import android.os.IBinder
 import android.os.Message
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.SeekBar
@@ -237,9 +234,6 @@ class AudioPlayerActivity :BaseActivity(), View.OnClickListener, SeekBar.OnSeekB
         override fun onServiceDisconnected(name: ComponentName?) {
 
         }
-
-
-
     }
 
 

@@ -1,1 +1,1 @@
-include ':app', ':notifycationdemo'
+include ':app', ':notifycationdemo', ':mylibrary', ':mylibrary2'

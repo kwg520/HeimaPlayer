@@ -24,10 +24,9 @@ import org.jetbrains.anko.toast
         initData()
     }
     /**
-     * 获取数据
+     * 获取数据，获取数据和初始化数据的地方
       */
     protected open fun initData(){
-
     }
 
 
@@ -35,7 +34,6 @@ import org.jetbrains.anko.toast
      * 获取adapter 和view 的一些监听
      */
     protected open fun initListener(){
-
     }
     /**
      * 获取布局id

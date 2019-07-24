@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/tab_home"
+            android:icon="@mipmap/ic_bottom_home_icon"
+            android:title="首页"  />
+
+    <item
+            android:id="@+id/tab_mv"
+            android:icon="@mipmap/ic_bottom_mv_unselect"
+            android:title="MV"/>
+
+    <item
+            android:id="@+id/tab_vbang"
+            android:icon="@mipmap/ic_bottom_vlist_unselect"
+            android:title="V榜"  />
+    <item
+            android:id="@+id/tab_yuedan"
+            android:icon="@mipmap/ic_bottom_mvlist_unselect"
+            android:title="悦单"  />
+</menu>
+
+
